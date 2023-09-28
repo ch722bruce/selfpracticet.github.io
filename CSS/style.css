@@ -1,0 +1,182 @@
+/* Reset some basic styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #f7f7f7;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #333;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  border-bottom: 2px solid #e5e5e5;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+/* Grid for restaurant pictures */
+grid > div > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurantpic {
+  width: 500px; /* adjust as needed */
+  height: 350px;
+  display: block; /* to remove default bottom spacing */
+  object-fit: cover; /* for consistent appearance */
+}
+
+/* Box Gallery */
+.gallery .box {
+  width: 33.33%; /* for 3 boxes per row */
+  float: left; /* to align boxes horizontally */
+  box-sizing: border-box;
+}
+
+.foodpic {
+  width: 500px;
+  height: 400px;
+  display: block;
+  object-fit: cover;
+}
+
+.links-list a {
+    background-color: rgb(179,57,81);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .links-list a:hover {
+    background-color: rgb(66, 28, 40);
+    color: #fff;
+  }
+
+/* Clearing floats */
+.gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Font Size */
+.FontSize li {
+  margin-bottom: 10px;
+}
+
+.size1 {
+  font-size: 12px; /* Absolute size */
+}
+
+.size2 {
+  font-size: 1em; /* Relative to the current font size */
+}
+
+.size3 {
+  font-size: 16pt; /* Absolute size */
+}
+
+.size4 {
+  font-size: 125%; /* Relative to the current font size */
+}
+
+.size5 {
+  font-size: 2rem; /* Relative to the root element */
+}
+
+.size6 {
+  font-size: 24px; /* Absolute size */
+}
+
+/* Positioning */
+.Positioning > div {
+  margin-bottom: 10px;
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 10px 0;
+}
+
+body {
+  height: 2000px; /* Just to make the page scrollable for demonstration purposes */
+}
+
+.relative-box {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background-color: lightcoral;
+  padding: 10px;
+  /* Use case: When you want to move an element from its natural flow, without affecting the layout of other elements. */
+}
+
+.absolute-box {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: lightblue;
+  padding: 10px;
+  /* Use case: When you want an element to be positioned with respect to its nearest positioned parent, but without affecting the position of any other elements. */
+}
+
+.static-box {
+  background-color: lightgreen;
+  padding: 10px;
+  /* Use case: Default positioning. When you don't need any special positioning. */
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  padding: 10px;
+  text-align: center;
+  /* Use case: Elements that should stay in the same place even upon scrolling, like a sticky navigation bar or footer. */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #e5e5e5;
+}
